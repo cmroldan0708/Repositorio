@@ -28,16 +28,14 @@ public class ContactusTest {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    System.setProperty("webdriver.chrome.driver", "src/main/resources/cromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
     driver = new ChromeDriver();
-    js = (JavascriptExecutor) driver;
-    vars = new HashMap<String, Object>();
   }
   @After
   public void tearDown() {
     driver.quit();
   }
-  @Test
+    @Test
   public void contactus() {
     driver.get("http://automationpractice.com/index.php");
     driver.manage().window().setSize(new Dimension(1552, 840));

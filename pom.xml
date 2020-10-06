@@ -7,7 +7,10 @@
     <groupId>org.example</groupId>
     <artifactId>Contactar</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <properties>
+        <maven.compile.source>1.8</maven.compile.source>
+        <maven.target.source>1.8</maven.target.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -20,8 +23,4 @@
             <version>4.13</version>
         </dependency>
     </dependencies>
-    <properties>
-        <maven.compile.source>1.5</maven.compile.source>
-        <maven.target.source>1.5</maven.target.source>
-    </properties>
 </project>
